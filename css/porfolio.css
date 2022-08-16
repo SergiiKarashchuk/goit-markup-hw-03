@@ -1,0 +1,159 @@
+:root {
+    --primery-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+}
+
+.body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F5F5F5;
+    color: var(--primery-text-color);
+
+}
+
+.logo span {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: var(--accent-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #000000;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    
+}
+.logo:hover {
+    color: #2196F3;
+}
+.logo span:hover {
+    color: #000000;
+}
+
+.site-nav .link.curent {
+    font-family: 'Roboto';
+    color: var(--accent-color);
+}
+
+
+/* Цвет заголовков #212121 */
+
+/* Цвет основного текста #757575 */
+
+ /* белый #ffffff  */
+
+/* акцент #2196F3  */
+
+/* Цвет основного фона #F5F5F5 */
+
+/* Цвет дополнительного фона #F5F4FA */
+
+
+    /* site-nav */
+.site-nav a {
+    color:var(--title-text-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+.contacts a {
+    color: var(--primery-text-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+    color: var(--accent-color);
+}
+
+.contacts a:hover,
+.contacts a:focus {
+    color: var(--accent-color);
+}
+
+/* <!-- Кнопки фільтра --> */
+
+.button a {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    list-style: none;
+    cursor: pointer;
+
+}
+
+.button a:hover,
+.button a:focus {
+    color: #FFFFFF;
+}
+
+
+/* Проєкти */
+
+.projects {
+list-style: none;
+}
+
+.projects h2 {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.projects p {
+    color: var(--primery-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+
+}
+
+/* Футер */
+
+.address {
+    font-family: 'Roboto';
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+
+}
+
+.links h3 {
+    font-family: 'Roboto';
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+
+}
+
+.links.list {
+    list-style: none;
+}
+
