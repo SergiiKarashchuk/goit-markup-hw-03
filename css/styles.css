@@ -1,0 +1,236 @@
+:root {
+    --primery-text-color: #757575;
+    --title-text-color: #212121;
+    --hover-text-color: #ffffff;
+    --accent-color: #2196F3;
+    --primary-background-color: #F5F4FA;
+    --secondary-background-color: #2F303A; 
+    --hero-color: #ffffff;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    color: var(--primery-text-color);
+
+}
+
+.logo span {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: var(--accent-color);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.logo {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    color: #000000;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+.logo:hover {
+    color: #2196F3;
+}
+
+.site-nav .link.curent {
+    color: var(--accent-color);
+}
+
+
+.list {
+    list-style: none;
+}
+/* Цвет заголовков #212121 */
+
+/* Цвет основного текста #757575 */
+
+/* акцент #2196F3  */
+
+/* Цвет основного фона #ffffff */
+
+/* Цвет дополнительного фона #F5F4FA */
+
+
+    /* site-nav */
+    .site-nav a {
+        color:var(--title-text-color);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.4;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+    }
+    .contacts a {
+        color: var(--primery-text-color);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.4;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+    color: var(--accent-color);
+}
+
+.contacts a:hover,
+.contacts a:focus {
+    color: var(--accent-color);
+}
+
+.section-title {
+    color: var(--title-text-color);
+}
+
+    /* потім прибрати фон */
+.hero {
+    background-color: gray;
+}
+    /* Hero */
+.hero-title {    
+    color: var(--hero-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.btn {
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+
+    border-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #188CE8;
+
+}
+
+    /* Переваги */
+
+.visually-hidden {
+        position: absolute; 
+        white-space: nowrap; 
+        width: 1px; height: 1px; 
+        overflow: hidden; border: 0; 
+        padding: 0; clip: rect(0 0 0 0); 
+        clip-path: inset(50%); 
+        margin: -1px;
+    
+    }
+
+.benefits.list .section-title {
+        color: var(--title-text-color);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+    
+.benefits.list .section-text {
+        color: var(--primery-text-color);
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+    }
+
+
+    /* Послуги */
+
+.project-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    }
+
+.project.list p {
+    color: var(--hero-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    }
+
+    /* Команда */
+
+.section.heands {
+    background-color: #F5F4FA;
+}
+
+.section.heands h2 {
+    color: var(--title-text-color);
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.heands-list h3 {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.heands.list li {
+    background-color: #FFFFFF;
+}
+
+.position {
+    color: var(--primery-text-color);
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+
+    /* Футер */
+
+.section-footer {
+    background-color: var(--secondary-background-color);
+}
+
+.section-address .item {
+    color: #FFFFFF;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+.section-address .mail,
+.section-address .tel {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+
+}
+
