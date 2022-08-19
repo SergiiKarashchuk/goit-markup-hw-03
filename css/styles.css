@@ -8,9 +8,54 @@
     --hero-color: #ffffff;
 }
 
+/* Цвет заголовков #212121 */
+
+/* Цвет основного текста #757575 */
+
+ /* белый #ffffff  */
+
+/* акцент #2196F3  */
+
+/* Цвет основного фона #F5F4FA */
+
+/* Цвет дополнительного фона #2F303A */
+
+
+    /* site-nav */
+
 body {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: var(--primery-text-color);
+
+}
+
+/* header start */
+
+.container-header {
+    width: 1200px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-nav {
+    display: flex;
+    align-items: baseline;
+    
+}
+
+
+.section-address a:hover {
+    color: #2196F3;
+}
+
+.section-address ul {
+    padding-inline-start: 15px;
+    margin-top: 0px;
+    list-style: none;
 
 }
 
@@ -23,10 +68,12 @@ body {
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-decoration: none;
+
+
 }
 
 .logo {
-    font-family: Raleway, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     color: #000000;
     font-weight: 700;
@@ -34,46 +81,42 @@ body {
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-decoration: none;
+
+    min-width: 145px;
+    max-width: 170px;
+    
 }
+
+
 .logo:hover {
     color: #2196F3;
 }
 
 .site-nav .link.curent {
+    font-family: 'Roboto';
     color: var(--accent-color);
 }
-
 
 .list {
     list-style: none;
 }
-/* Цвет заголовков #212121 */
-
-/* Цвет основного текста #757575 */
-
-/* акцент #2196F3  */
-
-/* Цвет основного фона #ffffff */
-
-/* Цвет дополнительного фона #F5F4FA */
 
 
-    /* site-nav */
-    .site-nav a {
-        color:var(--title-text-color);
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.4;
-        letter-spacing: 0.02em;
-        text-decoration: none;
-    }
-    .contacts a {
-        color: var(--primery-text-color);
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.4;
-        letter-spacing: 0.02em;
-        text-decoration: none;
+.site-nav a {
+    color:var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+.contacts a {
+    color: var(--primery-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
 .site-nav a:hover,
@@ -81,20 +124,59 @@ body {
     color: var(--accent-color);
 }
 
+.site-nav.list {
+    display: flex;
+}
+
+.container-nav .logo {
+    margin-left: 15px;
+    margin-right: 93px;
+}
+
+.site-nav.list li:not(:last-child) {
+    margin-right: 50px;
+}
+
 .contacts a:hover,
 .contacts a:focus {
     color: var(--accent-color);
 }
 
+.contacts.list {
+    display: flex;
+    margin-right: 11px;
+}
+
+.contacts.list li:not(:last-child) {
+    margin-right: 50px;
+}
+
+
+/* header end */
+
+
 .section-title {
     color: var(--title-text-color);
 }
 
+
     /* потім прибрати фон */
+
+
 .hero {
     background-color: gray;
+
+    width: 1200px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid tomato;
 }
+
+
     /* Hero */
+
+
 .hero-title {    
     color: var(--hero-color);
     font-weight: 900;
@@ -103,6 +185,14 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+
+
+    display: flex;
+    padding-top: 200px;
+    margin-left: 252px;
+    margin-right: 252px;
+    padding-left: 43px;
 }
 .btn {
     color: #FFFFFF;
@@ -116,6 +206,10 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
+    
+    margin-right: 20px;
+    margin-left: 492px;
+
 }
 
 .btn:hover {
@@ -123,7 +217,9 @@ body {
 
 }
 
+
     /* Переваги */
+
 
 .visually-hidden {
         position: absolute; 
@@ -152,8 +248,30 @@ body {
         letter-spacing: 0.03em;
     }
 
+.container-benefits {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 94px;
+    border: 1px solid tomato;
+}
+
+.benefits.list  {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.benefits.list:first-child {
+    padding-left: 15px;
+}
+
+.benefits.list li:not(:last-child) {
+    padding-right: 30px;
+}
 
     /* Послуги */
+
 
 .project-title {
     color: var(--title-text-color);
@@ -174,7 +292,9 @@ body {
     text-transform: uppercase;
     }
 
+
     /* Команда */
+
 
 .section.heands {
     background-color: #F5F4FA;
@@ -210,27 +330,48 @@ body {
     letter-spacing: 0.03em;
 }
 
+
     /* Футер */
+
+
 
 .section-footer {
     background-color: var(--secondary-background-color);
-}
-
+    }
+    
 .section-address .item {
     color: #FFFFFF;
     font-style: normal;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-}
-
+    }
+    
 .section-address .mail,
 .section-address .tel {
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
     font-size: 14px;
     line-height: 1.7;
-    letter-spacing: 0.03em;
-
-}
-
+    letter-spacing: 0.03em;   
+    }
+ 
+    .section-footer {
+        background-color: var(--secondary-background-color);
+      
+    }
+    
+    .container-footer {
+        width: 1200px;
+        height: 252px;
+        margin-left: auto;
+        margin-right: auto;
+     
+    }
+    
+    .container-footer .logo {
+        display: inline-block;
+        margin-top: 60px;
+        margin-left: 15px;
+        margin-bottom: 20px;
+    }
