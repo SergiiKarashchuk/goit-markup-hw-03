@@ -19,7 +19,6 @@ body {
     height: 80px;
     margin-left: auto;
     margin-right: auto;
-
     display: flex;
     justify-content: space-between;
 }
@@ -27,7 +26,8 @@ body {
 .container-nav {
     display: flex;
     align-items: baseline;
-    
+    align-items: center;
+
 }
 
 
@@ -37,7 +37,6 @@ body {
     margin-right: auto;
     margin-top: 90px;
 
-  
 }
 
 .container-projects {
@@ -178,6 +177,7 @@ body {
 .contacts.list {
     display: flex;
     margin-right: 11px;
+    align-items: center;
 }
 
 .contacts.list li:not(:last-child) {

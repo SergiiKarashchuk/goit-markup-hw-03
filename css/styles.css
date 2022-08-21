@@ -36,14 +36,14 @@ body {
     height: 80px;
     margin-left: auto;
     margin-right: auto;
-
+    background-color: tomato;
     display: flex;
     justify-content: space-between;
 }
 
 .container-nav {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     
 }
 
@@ -56,6 +56,7 @@ body {
     padding-inline-start: 15px;
     margin-top: 0px;
     list-style: none;
+
 
 }
 
@@ -109,6 +110,7 @@ body {
     line-height: 1.4;
     letter-spacing: 0.02em;
     text-decoration: none;
+
 }
 .contacts a {
     color: var(--primery-text-color);
@@ -145,6 +147,7 @@ body {
 .contacts.list {
     display: flex;
     margin-right: 11px;
+    align-items: center;
 }
 
 .contacts.list li:not(:last-child) {
@@ -166,11 +169,13 @@ body {
 .hero {
     background-color: gray;
 
+}
+
+.container-hero {
     width: 1200px;
     height: 600px;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid tomato;
 }
 
 
@@ -179,7 +184,6 @@ body {
 
 .hero-title {    
     color: var(--hero-color);
-    font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
     text-align: center;
@@ -192,6 +196,7 @@ body {
     padding-top: 200px;
     margin-left: 252px;
     margin-right: 252px;
+    margin-top: 0px;
     padding-left: 43px;
 }
 .btn {
@@ -253,7 +258,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 94px;
-    border: 1px solid tomato;
 }
 
 .benefits.list  {
@@ -270,8 +274,16 @@ body {
     padding-right: 30px;
 }
 
+
     /* Послуги */
 
+
+.container-projects {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 94px; 
+}
 
 .project-title {
     color: var(--title-text-color);
@@ -280,16 +292,21 @@ body {
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
+
+    display: inline;
+    margin-left: 415px;
+    margin-bottom: 50px;
+    padding-top: 0px;
     }
 
-.project.list p {
-    color: var(--hero-color);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+ul.project.list {
+    display: flex;
+    padding-left: 15px;
+    margin-bottom: 0px;
+}
+
+.project.list  li:not(:last-child) {
+    margin-right: 30px;
     }
 
 
@@ -300,6 +317,32 @@ body {
     background-color: #F5F4FA;
 }
 
+.container-heands {
+    width: 1200px;
+    height: 648px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 94px;
+    padding-bottom: 94px;
+}
+
+ul.heands.list {
+    display: flex;
+    padding-left: 15px;
+}
+
+
+.heands.list li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.heands.list li {
+    text-align: center;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
 .section.heands h2 {
     color: var(--title-text-color);
     text-align: center;
@@ -308,6 +351,8 @@ body {
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
+
+    margin-top: 94px;
 }
 
 .heands-list h3 {
@@ -329,6 +374,8 @@ body {
     line-height: 1.2;
     letter-spacing: 0.03em;
 }
+
+
 
 
     /* Футер */
