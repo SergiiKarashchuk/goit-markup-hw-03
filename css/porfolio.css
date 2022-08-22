@@ -16,18 +16,20 @@ body {
 
 .container-header {
     width: 1200px;
-    height: 80px;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+
     justify-content: space-between;
 }
 
-.container-nav {
-    display: flex;
-    align-items: baseline;
-    align-items: center;
+.site-nav.list {
+    display: inline-block;
+}
 
+.contacts.list {
+    display: inline-block;   
 }
 
 
@@ -103,6 +105,8 @@ body {
 
     min-width: 145px;
     max-width: 170px;
+
+    margin-right: 93px;
     
 }
 
@@ -157,32 +161,25 @@ body {
 }
 
 .site-nav.list {
-    display: flex;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
-.container-nav .logo {
-    margin-left: 15px;
-    margin-right: 93px;
+.contacts.list {
+    margin: 0px;
+    padding: 0px; 
+    padding-top: 32px;
+    padding-bottom: 32px;   
 }
 
-.site-nav.list li:not(:last-child) {
-    margin-right: 50px;
-}
 
 .contacts a:hover,
 .contacts a:focus {
     color: var(--accent-color);
 }
 
-.contacts.list {
-    display: flex;
-    margin-right: 11px;
-    align-items: center;
-}
-
-.contacts.list li:not(:last-child) {
-    margin-right: 50px;
-}
 
 /* <!-- Кнопки фільтра --> */
 
@@ -218,7 +215,7 @@ body {
     border-radius: 4px;
 }
 
-.list {
+.button-list {
     display: flex;
     justify-content: center;
 

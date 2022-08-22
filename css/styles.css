@@ -33,19 +33,25 @@ body {
 
 .container-header {
     width: 1200px;
-    height: 80px;
     margin-left: auto;
     margin-right: auto;
-    background-color: tomato;
-    display: flex;
-    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    align-items: center;
+
 }
 
-.container-nav {
-    display: flex;
-    align-items: center;
-    
+.site-nav.list {
+    display: inline-flex; 
 }
+
+.contacts.list {
+    display: inline-flex; 
+}
+
+
+
 
 
 .section-address a:hover {
@@ -85,6 +91,8 @@ body {
 
     min-width: 145px;
     max-width: 170px;
+
+    margin-right: 93px;
     
 }
 
@@ -127,31 +135,32 @@ body {
 }
 
 .site-nav.list {
-    display: flex;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-right: 334px;
 }
 
-.container-nav .logo {
-    margin-left: 15px;
-    margin-right: 93px;
+.contacts.list {
+    margin: 0px;
+    padding: 0px; 
+    padding-top: 32px;
+    padding-bottom: 32px;   
 }
 
 .site-nav.list li:not(:last-child) {
     margin-right: 50px;
 }
 
+.contacts.list li:not(:last-child) {
+    margin-right: 50px;
+}
+
+
 .contacts a:hover,
 .contacts a:focus {
     color: var(--accent-color);
-}
-
-.contacts.list {
-    display: flex;
-    margin-right: 11px;
-    align-items: center;
-}
-
-.contacts.list li:not(:last-child) {
-    margin-right: 50px;
 }
 
 
@@ -173,9 +182,12 @@ body {
 
 .container-hero {
     width: 1200px;
-    height: 600px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 
@@ -183,6 +195,8 @@ body {
 
 
 .hero-title {    
+    width: 696px;
+    margin: 0px auto;
     color: var(--hero-color);
     font-size: 44px;
     line-height: 1.4;
@@ -190,14 +204,6 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-
-
-    display: flex;
-    padding-top: 200px;
-    margin-left: 252px;
-    margin-right: 252px;
-    margin-top: 0px;
-    padding-left: 43px;
 }
 .btn {
     color: #FFFFFF;
@@ -212,9 +218,8 @@ body {
     border-radius: 4px;
     cursor: pointer;
     
-    margin-right: 20px;
-    margin-left: 492px;
-
+    margin: 30px auto 0px auto; 
+    display: block;
 }
 
 .btn:hover {
@@ -253,36 +258,56 @@ body {
         letter-spacing: 0.03em;
     }
 
-.container-benefits {
+.benefits {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 94px;
+}
+
+.container-benefits {
+    width: 1200px;
+    padding-top: 94px;
+
 }
 
 .benefits.list  {
     display: flex;
     padding-left: 15px;
     padding-right: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
 }
 
-.benefits.list:first-child {
-    padding-left: 15px;
-}
 
 .benefits.list li:not(:last-child) {
-    padding-right: 30px;
+    margin-right: 30px;
+}
+
+.benefits.list h3 {
+    margin-top: 0px;
+}
+
+.benefits.list p {
+    margin: 0px;
 }
 
 
     /* Послуги */
 
+.projects {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+
+    }
 
 .container-projects {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 94px; 
+    padding-top: 15px; 
+    padding-bottom: 15px;
 }
 
 .project-title {
@@ -293,42 +318,48 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
 
-    display: inline;
-    margin-left: 415px;
     margin-bottom: 50px;
-    padding-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
     }
 
 ul.project.list {
     display: flex;
-    padding-left: 15px;
-    margin-bottom: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .project.list  li:not(:last-child) {
     margin-right: 30px;
     }
 
+    .project.list img {
+        display: block;
+    }
 
     /* Команда */
 
 
 .section.heands {
     background-color: #F5F4FA;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .container-heands {
     width: 1200px;
-    height: 648px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 94px;
-    padding-bottom: 94px;
+    padding-left: 15px; 
+    padding-right: 15px;
+
 }
 
 ul.heands.list {
     display: flex;
-    padding-left: 15px;
+    margin: 0px;
+    padding: 0px;
 }
 
 
@@ -337,22 +368,23 @@ ul.heands.list {
 }
 
 .heands.list li {
-    text-align: center;
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+
 }
 
 .section.heands h2 {
     color: var(--title-text-color);
-    text-align: center;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
-    text-align: center;
     letter-spacing: 0.03em;
-
-    margin-top: 94px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 .heands-list h3 {
@@ -360,12 +392,26 @@ ul.heands.list {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
-    text-align: center;
     letter-spacing: 0.03em;
+
 }
+
+.name-position {
+    padding: 30px;
+
+}
+.name-position h3 {
+    margin-top: 0px;
+
+}
+.name-position p {
+    margin: 0px;
+}
+
 
 .heands.list li {
     background-color: #FFFFFF;
+
 }
 
 .position {
@@ -384,6 +430,8 @@ ul.heands.list {
 
 .section-footer {
     background-color: var(--secondary-background-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
     }
     
 .section-address .item {
@@ -401,24 +449,40 @@ ul.heands.list {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;   
-    }
+}
+
+.section-address ul {
+margin: 0px;
+padding: 0px;
+}
  
-    .section-footer {
-        background-color: var(--secondary-background-color);
+.section-footer {
+    background-color: var(--secondary-background-color);
       
-    }
+}
     
-    .container-footer {
-        width: 1200px;
-        height: 252px;
-        margin-left: auto;
-        margin-right: auto;
+.container-footer {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px; 
+    padding-right: 15px;
      
-    }
-    
+}
+
+.container-footer a {
+    text-decoration: none;
+}
+
     .container-footer .logo {
-        display: inline-block;
-        margin-top: 60px;
-        margin-left: 15px;
-        margin-bottom: 20px;
-    }
+    color: white;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.section-address li:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+
+
