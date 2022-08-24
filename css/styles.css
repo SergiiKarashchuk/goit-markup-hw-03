@@ -30,21 +30,39 @@ body {
 /* header start */
 
 .container-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
 
+.container-nav {
+  display: flex;
+}
+
+.container-nav,
+.contacts-list {
   align-items: center;
 }
 
 .site-nav.list {
-  display: inline-flex;
+  display: flex;
+}
+
+.list {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
 }
 
 .contacts.list {
-  display: inline-flex;
+  display: flex;
 }
 
 .section-address a:hover {
@@ -93,10 +111,6 @@ body {
   color: var(--accent-color);
 }
 
-.list {
-  list-style: none;
-}
-
 .site-nav a {
   color: var(--title-text-color);
   font-weight: 500;
@@ -104,6 +118,9 @@ body {
   line-height: 1.4;
   letter-spacing: 0.02em;
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: inline-block;
 }
 .contacts a {
   color: var(--primery-text-color);
@@ -112,26 +129,14 @@ body {
   line-height: 1.4;
   letter-spacing: 0.02em;
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: inline-block;
 }
 
 .site-nav a:hover,
 .site-nav a:focus {
   color: var(--accent-color);
-}
-
-.site-nav.list {
-  margin: 0px;
-  padding: 0px;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  margin-right: 334px;
-}
-
-.contacts.list {
-  margin: 0px;
-  padding: 0px;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .site-nav.list li:not(:last-child) {
@@ -149,6 +154,8 @@ body {
 
 /* header end */
 
+/* Hero */
+
 .section-title {
   color: var(--title-text-color);
 }
@@ -156,23 +163,13 @@ body {
 /* потім прибрати фон */
 
 .hero {
-  background-color: gray;
-}
-
-.container-hero {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
-/* Hero */
-
 .hero-title {
-  width: 696px;
+  width: 700px;
   margin: 0px auto;
   color: var(--hero-color);
   font-size: 44px;
@@ -180,6 +177,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 .btn {
   color: #ffffff;
@@ -193,8 +191,8 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-
-  margin: 30px auto 0px auto;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
 }
 
@@ -224,6 +222,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
 .benefits.list .section-text {
@@ -231,25 +231,19 @@ body {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-}
-
-.benefits {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.container-benefits {
-  width: 1200px;
-  padding-top: 94px;
+  margin: 0px;
 }
 
 .benefits.list {
+  padding-top: 94px;
+  padding-bottom: 94px;
   display: flex;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+
+.benefits.list li {
+  width: 270px;
 }
 
 .benefits.list li:not(:last-child) {
@@ -260,23 +254,10 @@ body {
   margin-top: 0px;
 }
 
-.benefits.list p {
-  margin: 0px;
-}
-
 /* Послуги */
 
 .projects {
-  padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.container-projects {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
 
 .project-title {
